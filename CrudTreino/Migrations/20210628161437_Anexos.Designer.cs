@@ -4,14 +4,16 @@ using CrudTreino.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CrudTreino.Migrations
 {
     [DbContext(typeof(Contexto))]
-    partial class ContextoModelSnapshot : ModelSnapshot
+    [Migration("20210628161437_Anexos")]
+    partial class Anexos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,7 +42,7 @@ namespace CrudTreino.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Anexos");
+                    b.ToTable("Anexo");
                 });
 
             modelBuilder.Entity("CrudTreino.Models.Carro", b =>

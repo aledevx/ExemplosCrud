@@ -7,10 +7,11 @@ namespace CrudTreino.Data
     {
         public Contexto(DbContextOptions<Contexto> options)
             : base(options)
-            {
-            }
+        {
+        }
 
-            public DbSet<Pessoa> Pessoas { get; set; }
-            public DbSet<Carro> Carros { get; set; }
+        public DbSet<Pessoa> Pessoas { get; set; }
+        public DbSet<Carro> Carros { get; set; }
+        public DbSet<Anexo> Anexos { get; set; }
     }
 }
